@@ -1,0 +1,60 @@
+// =============================
+// Mixins with Bourbon examples
+// =============================
+@use "bourbon" as *;
+@use "variables" as *;
+// @include background(value);
+// example @include background(lighten($red, 20%));
+@mixin background($background-color: $background) {
+  background: $background-color;
+  box-shadow: inset 0 0 4px shade($background-color, 7%);
+}
+
+// Center Elements
+// @include center;
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+// @include hidden;
+@mixin hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+// Simple breakpoints - base styles are phone first
+// eg @include media(500)
+@mixin media($point) {
+  @if $point==900 {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  } @else if $point==700 {
+    @media only screen and (min-width: 700px) {
+      @content;
+    }
+  } @else if $point==500 {
+    @media only screen and (min-width: 500px) {
+      @content;
+    }
+  } @else if $point==$point {
+    @media only screen and (min-width: $point + px) {
+      @content;
+    }
+  }
+}
+
+// @include button;
+@mixin button($bg: $button-background, $col: $button-color) {
+  background-color: $bg;
+  color: $col;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: tint($bg, 20%);
+      color: shade($col, 10%);
+    }
+  }
+}

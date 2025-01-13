@@ -1,0 +1,67 @@
+@use "../root/" as *;
+
+
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: $light-gray;
+}
+
+body {
+  color: $font-color;
+  font-family: $font;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: $font-size;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  transition: color $duration $timing;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+    color: $hover-color;
+  }
+}
+}
+
+//layout
+.wrapper {
+  @include padding(null 5%);
+}
+
+header {
+  //width: 100%;
+}
+
+.inner {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+border-bottom: 6px solid $light-gray;
+
+  p, span {
+    font-family: $heading-font;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin: 0;
+  }
+}
+
+@include media(900) {
+.wrapper {
+  padding: 0;
+}
+.inner,
+main,
+footer {
+max-width: 960px;
+@include center; 
+}
+}

@@ -1,0 +1,122 @@
+<!-- $title Common String Methods -->
+<!-- $SEO-title A longer title for the Common String Methods page -->
+<!-- $description This is the String Methods page which will not be the same header as the Javascript -->
+<!-- $URL /javascript/basics/common-string-methods.html -->
+<!-- $image /images/not-there.png -->
+
+
+<!-- @import '../includes-javascript/_header-cats' -->
+  
+  <main>
+   <header class="post-header">
+   
+    <h1>Common String Methods</h1>
+
+     <div class="post-meta">
+         
+        <span class="cat-links">#<a href="/javascript/basics/">Basics</a></span>
+      </div>
+   
+  </header>
+
+  <div class="post-content">
+    <p>Some text to start us off</p>
+<pre><code class="lang-js">let fullName = 'Michael Cain';
+console.log(fullName.toUpperCase());
+//result: MICHAEL CAIN
+
+let result = fullName.toLocaleLowerCase();
+console.log(result);
+//result: michael cain
+
+
+let email = 'mike@home.co.uk';
+
+//indexOf() - starts count at 0
+let index = email.indexOf('@');
+console.log('index of the @ sign is', index);
+//result: index of the @ sign is 4
+
+//lastIndexOf()
+let result2 = email.lastIndexOf('m');
+console.log(result2);
+//result: 7
+
+//slice()
+//count the first parameter from the beginning
+//count the second parameter from the beginning 
+let result3 = email.slice(0,5);
+console.log(result3);
+//result: mike@
+
+//slice includes 012/ 34567 /8
+let result4 = email.slice(3,8);
+console.log(result4);
+//result: e@hom
+
+//If you omit the second parameter, the method will slice out the rest of the string
+let result5 = email.slice(6);
+console.log(result5);
+//result: ome.co.uk
+
+//negative numbers count from the end
+let result6 = email.slice(-8);
+console.log(result6);
+//result: me.co.uk
+
+let result7 = email.slice(-9,-3);
+console.log(result7);
+//result: ome.co
+
+
+//substring() are similar to slice() but they cannot except negative indexes
+//slice includes 0123/ 45678 /9
+let result8 = email.substring(3,9);
+console.log(result8);
+//result: e@home
+
+
+//substr() - starts from 3 + 9
+//includes 012/ 312345678/ 9
+let result9 = email.substr(3,9);
+console.log(result9);
+//result: e@home.co
+
+
+//replace()
+let result10 = email.replace('m', 'w');
+console.log(result10);
+//result: wike@home.co.uk
+//replaces the first instance
+
+let result11 = email.replace('e', 'w');
+console.log(result11);
+//result: mikw@home.co.uk
+//only replaces first instance of multi instances
+
+
+//the trim() method removes whitespace from both sides of a string
+let text = "  This is untidy    "
+let result12 = text.trim()
+console.log(result12)
+//result: This is untidy</code></pre> 
+
+  </div>
+   <div class="related-post-wrap">
+  <h3>Similar in Basics</h3>
+  <div class="related-wrap"></div>
+</div>
+  </main>
+  <footer>
+  <a href="/">Home</a>
+  <a href="../">Javascript</a>
+</footer>
+</div>
+</body>
+<script>
+  const linkTitle = 'Common String Methods'
+</script>
+<!-- @import '../../includes/_default-js' -->
+
+<script src="../js-javascript/javascript-links.js"></script>
+</html>

@@ -1,0 +1,58 @@
+// =======================
+// Variables
+// =======================
+
+@use "bourbon" as *;
+
+//import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+// TYPOGRAPHY
+$font: 'Work Sans', sans-serif;
+$heading-font: $font;
+$alt-font: $heading-font;
+$code-font: 'Source Code Pro', monospace;
+$icon-font: "";
+
+$font-size: 1.2rem;
+
+$lead: calc($font-size * 1.134);
+$secondary: calc($font-size / 1.125);
+$third: calc($font-size / 1.255);
+
+// SIZE
+$radius: 0.1875rem;
+$spacer: 2rem;
+
+// COLOR
+$black: #1c0301;
+$white: #fff;
+$dark-gray: #464747;
+$medium-gray: #999;
+$light-gray: #ddd;
+$menu-line: #1B81F5;//blue
+
+// Font Colors
+$font-color: $dark-gray;
+$link-color: #2365c0; //blue
+$hover-color: #af0c22;
+
+// Background Colors
+$background: $light-gray;
+$light-background: tint($background, 65%);
+
+// Informaton colors
+$error-color: #ba221d;
+$alert-color: #bd912f;
+$success-color: #3f913a;
+
+//Button
+$button-color: $white;
+$button-background: $link-color;
+
+// Border
+$border: 1px solid $dark-gray;
+
+// Animations
+$duration: 150ms;
+$timing: ease;
