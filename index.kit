@@ -5,15 +5,30 @@
 <!-- $image /images/not-there.png -->
 
 <!-- @import 'includes/_header' -->
+<h1><!-- $title --></h1>
   <main>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus impedit, voluptas ad, officiis unde aliquam. Exercitationem, minus officia nulla? Labore soluta quaerat itaque officia neque blanditiis a totam id.</p>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus impedit, voluptas ad, officiis unde aliquam. Exercitationem, minus officia nulla? Labore soluta quaerat itaque officia neque blanditiis a totam id.</p>
+     <div class="home-wrap">
+     <div class="color-dark"></div>
+     <div class="color-light"></div>
+     <div class="div-one"></div>
+     <div class="div-two"></div>
+     <div class="div-three"></div>
+     <div class="div-four"></div>
+     </div>
+
+     <button>Button</button>
+     <a class="btn" href="#">a with class btn</a>
+     <a class="button" href="#">a tag with button mixin</a>
+     <button class="button">Button with button mixin</button>
   </main>
-  <footer>
-  <a href="javascript/">Javascript</a>
-  <a href="javascript/basics/">Basics</a>
-  </footer>
+  <footer class="footer">
+  <nav class="footer-links"><a href="/javascript/">Javascript</a> . <a href="/cheat-sheets/">Cheat-Sheets</a> . <a href="/blog/">Blog</a></nav>
+  <p class="third">&copy;2025 <a href="/" title="howardlucas">howardlucas . </a><a class="modal-button" href="javascript:;">Contact . </a><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a></p>
+</footer>
+<!-- @import 'includes/_modal' -->
   </div>
 </body>
-<!-- @import 'includes/_default-js' -->
+<script src="js/app.js"></script>
 </html>

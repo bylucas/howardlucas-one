@@ -1,0 +1,177 @@
+<!-- $title Git and Github Basics -->
+<!-- $SEO-title A longer title for the Git and Github Basics page -->
+<!-- $description This is the Git and Github Basics page -->
+<!-- $URL /cheat-sheets/git-and-github-basics.html -->
+<!-- $image /images/not-there.png -->
+
+
+<!-- @import includes-cheatsheets/_header-cheat' -->
+  
+  <main>
+   <header class="post-header">
+   
+    <h1><!-- $title --></h1>
+
+     <div class="post-meta">
+         
+        <span class="cat-links">#<a href="/cheat-sheets/">Cheat-Sheets</a></span>
+      </div>
+   
+  </header>
+
+  <div class="post-content">
+
+<img src="../images/git-header-image.png" alt="" />
+
+
+<h2>What is Git</h2>
+
+<p>Git is a distributed version control system that tracks versions of files. It is often used to control source code by programmers who are developing software collaboratively. Git maintains a local copy of a repository, a.k.a. repo, with history and version-tracking abilities, independent of network access or a central server. A repo is stored on each computer in a standard directory with additional, hidden files to provide version control capabilities.</p>
+
+<h2>What is Github</h2>
+
+<p>GitHub is a cloud-based platform that allows developers to store, share, and collaborate on code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. It is commonly used to host open source software development projects.</p>
+
+<hr>
+<h2>Configurations</h2>
+
+<p>First set some configuration settings to work with Git. If you&#8217;ve signed up to Github use those settings so that they can interact with each other.</p>
+
+<p class="secondary"><code>git config --global user.name &quot;Your Username&quot;</code><br/>
+<em>The username you use on Github</em></p>
+
+<p class="secondary"><code>git config --global user.email &quot;Your email&quot;</code><br/>
+<em>The email you use on Github</em></p>
+
+<p class="secondary"><code>git config --global color.ui true</code><br/>
+<em>highlights the git code for easier reading</em></p>
+
+<p class="secondary"><code>git config --list</code><br/>
+<em>Lists your git config settings</em>
+<em>global - default settings used in all git repros</em></p>
+
+<h4>.DS_Store files</h4>
+
+<p class="secondary"><code>find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch</code><br/>
+<em>Finds and removes .DS_Store files from your project and Git. Do this from the root of your project</em><br/>
+Add - <code>**/.DS_Store</code> to the <code>.gitignore</code> file</p>
+
+<hr>
+<h2>Starting a Repository</h2>
+
+<p>A Git repository is just a folder that holds your project. It can be empty or already contain project files and folders. Git places a hidden folder at the root of the project folder/repository where it tracks the projects files and watches for changes.</p>
+
+<p class="secondary"><code>git init</code><br/>
+<em>initialize a repository</em></p>
+
+<p class="secondary"><code>git status</code><br/>
+<em>Shows the status of the repository</em></p>
+
+<hr>
+<h2>Staging Files</h2>
+
+<p>The command <code>git status</code> shows any changes to the projects files. Before Git commits the files it needs to add them to the staging area. Git manipulates the staging area with the following commands.</p>
+
+<p class="secondary"><code>git add &lt;file-name&gt;</code><br/>
+<em>Add file to commit stage</em></p>
+
+<p class="secondary"><code>git add &lt;file-name&gt; &lt;another-file-name&gt; &lt;and-another-file-name&gt;</code><br/>
+<em>Add multiple files to commit stage</em></p>
+
+<p class="secondary"><code>git add .</code><br/>
+<em>Add all files in the root directory - note the period</em></p>
+
+<p class="secondary"><code>git add --all</code><br/>
+<em>Add all files in the project</em></p>
+
+<p class="secondary"><code>git add -A</code><br/>
+<em>Add all files in the project</em></p>
+
+<p class="secondary"><code>git rm --cached &lt;file-name&gt;</code><br/>
+<em>Remove file from commit list</em></p>
+
+<p class="secondary"><code>git reset &lt;file-name&gt;</code><br/>
+<em>Remove file from commit list</em></p>
+
+<hr>
+<h2>Committing to a Repository</h2>
+
+<p>After adding files to the staging area Git will commit the changes or new files to the current branch.</p>
+
+<p class="secondary"><code>git commit -m &quot;your message&quot;</code><br/>
+<em>Commit with message</em> </p>
+
+<p class="secondary"><code>git reset --soft HEAD^</code><br/>
+<em>Undo the last commit</em></p>
+
+<p class="secondary"><code>git commit --amend -m &quot;enter your message&quot;</code><br/>
+<em>Use instead of <code>git reset</code> to amend the last commit and rewriting the message</em><br/>
+<code>eg. git add I-forgot-this-file</code><br/>
+<code>git commit --amend -m &quot;added I-forgot-this-file&quot;</code></p>
+
+<hr>
+<h2>Pulling and Pushing From and To Repositories</h2>
+
+<p>Working between the local and remote repositories (Github)</p>
+
+<p class="secondary"><code>git remote add origin &lt;repo link&gt;</code><br/>
+<em>Set up the origin path to your on-line repository</em></p>
+
+<p class="secondary"><code>git push -u origin master</code><br/>
+<em>upload to the on-line repository master branch</em></p>
+
+<p class="secondary"><code>git push</code><br/>
+<em>because we ran <code>git push -u origin master</code> we can now just use <code>git push</code></em></p>
+
+<p class="secondary"><code>git clone &lt;clone link&gt;</code><br/>
+<em>Download a on-line project to a folder on your computer</em></p>
+
+<p class="secondary"><code>git clone &lt;clone link&gt; new-name</code><br/>
+<em>Download and change the name if you wish</em></p>
+
+<p class="secondary"><code>git pull</code><br/>
+<em>Update the local repository with any changes made in the remote repository</em></p>
+
+<hr>
+<h2>Branching</h2>
+
+<p>The main branch in a repository is the <code>master branch</code>. If we need to add new features to the project we can make them on separate branches so as not to upset the <code>master branch</code>. This allows multi developers to work on different features at the same time. When the features are finished and passed the branches can be merged with the <code>master branch</code>.</p>
+
+<p class="secondary"><code>git branch</code><br/>
+<em>Lists all the repository branches</em></p>
+
+<p class="secondary"><code>git branch &lt;branch-name&gt;</code><br/>
+<em>Create a new branch</em></p>
+
+<p class="secondary"><code>git checkout &lt;branch-name&gt;</code><br/>
+<em>Switch to branch</em> </p>
+
+<p class="secondary"><code>git merge &lt;branch-name&gt;</code><br/>
+<em>Merge the branch into master branch</em>
+<em>Switch to the <code>master branch</code> before merging</em></p>
+
+<p class="secondary"><code>git branch -d &lt;branch-name&gt;</code><br/>
+<em>delete branch</em></p>
+
+<p class="secondary"><code>git checkout -b &lt;branch-name&gt;</code><br/>
+<em>Create and switch to new branch</em></p>
+
+  </div>
+   <div class="related-post-wrap">
+  <h2>Similar in Cheat Sheets</h2>
+  <div class="related-wrap"></div>
+</div>
+  </main>
+  <!-- @import 'includes-cheatsheets/_cheat-footer' -->
+  <!-- @import '../includes/_modal' -->
+</div>
+</body>
+<script>
+  const linkTitle = 'Git and Github Basics'
+  const linkCat = 'cheatCat'
+</script>
+<!-- @import '../includes/_default-js' -->
+<script src="js-cheatsheets/all-links.js"></script>
+<script src="js-cheatsheets/sidebar-links.js"></script>
+<script src="js-cheatsheets/related-link.js"></script>
+</html>

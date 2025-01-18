@@ -1,115 +1,85 @@
 @use "../root/" as *;
 
-.main-navigation {
-  display: block;
-}
- .menu-wrap {
-//display: none;
-@include position(fixed, 0 null null -250px);
-z-index: 100;
-  background: #303030;
-  padding: 40px 25px;
-  width: 70%;
-  max-width: 250px;
+.menu-wrap {
+  @include position(fixed, 0 null null -290px);
+  z-index: 100;
+  background: $black;
+  padding: 20px 25px;
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 290px;
+  border-right: 6px solid $color-light; 
   overflow-y: scroll;
-  transition: all 1s ease;
+  transition: all 0.8s ease;
+
+  .top-links {
+    border-bottom: 1px dashed $menu-line;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    li {
+      font-family: $heading-font;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin-bottom: 0.4rem;
+    }
+  } //end top-links
+  a {
+    color: $light-gray;
+  }
+
+  .line {
+    &:before,
+    &:after {
+      content: "―";
+      color: $menu-line;
+      @include margin(null 3px);
+    }
+  } //end line
+
+  ul {
+    //margin-bottom: 7px;
+    //padding-bottom: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    //border-bottom: 0;
+    li {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  ul ul {
+    border-bottom: 1px dashed $menu-line;
+    margin-bottom: 12px;
+    //padding-bottom: 4px;
+    //padding-top: 5px;
+    //margin-left: 5px;
+    li {
+      font-size: 1.1rem;
+    }
+  }
+
+  ul ul ul {
+    border-bottom: 0;
+    //margin-top: 5px;
+
+    li {
+      margin-left: 5px;
+      font-size: 0.9rem;
+      line-height: 1.9;
+    }
+  }
 }
- //  .top-links {
- //    border-bottom: 1px dashed $menu-line;
- //    margin-bottom: 20px;
- //    padding-bottom: 10px; 
- //  }
-
- //  p {
- //    font-family: $heading-font;
- //      font-weight: 200;
- //      font-size: 1.1rem;
- //      letter-spacing: 5px;
- //      margin-bottom: 0.5rem;
-
- //      a {
- //        color: $white;
- //        opacity: .7;
- //      }
- //  }
- 
- //  .line {
- //     &:before,
- //    &:after {
- //      content: '―';
- //      color: $menu-line;
- //      @include margin(null 3px);
- //    }
- //  }
- // }
-
-
-//  ul {
-//   list-style: none;
-
-//    li {
-//       font-family: $heading-font;
-//       font-weight: 300;
-//       font-size: 1rem;
-//       padding-bottom: 0.2rem;
-//       letter-spacing: 2px;
-//       @include media(600) {
-//       font-size: 1.2rem;
-//     }
-      
-//        a {
-//       color: $white;
-//       text-decoration: none;
-//       opacity: .7;
-// }
-//  ul {
-//   padding-left: 0;
-//   margin-bottom: 0;
-
-//   li {
-//     font-size: .9rem;
-//     line-height: 1.4;
-//     margin-bottom: 0;
-//     margin-left: 6px;
-//     letter-spacing: 2px;
-//     @include media(600) {
-//       font-size: 1.1rem;
-//     }
-
-//  ul {
-//   margin-bottom: 10px;
-//   margin-top: 8px;
-//   padding-bottom: 7px;
-//   border-bottom: 1px dashed $menu-line;
-//   li {
-//     font-size: .9rem;
-//   margin-left: 18px;
-//   margin-bottom: 7px;
-//   letter-spacing: 0;
-//   @include media(600) {
-//       font-size: 1rem;
-//     }
-//   }
-// }
-
-// }
-// }
-
-// }
-// }
-// }
 
 .main-navigation.toggled .menu-wrap {
-  transform: translateX(250px);
+  transform: translateX(290px);
 }
 
-@include media(900) {
-  // .menu-wrap p a:hover,
-  // .nav-menu li a:hover {
-  //   opacity: 1;
-  // }
+@media (hover: hover) {
+  .menu-wrap a:hover {
+    color: $menu-hover-color;
+  }
 }
-

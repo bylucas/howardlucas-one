@@ -1,0 +1,43 @@
+@use "../root/" as *;
+
+.home-wrap {
+  width: 100%;
+  border: 1px solid $dark-gray;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.color-dark {
+  @include size(100px);
+  background-color: $color-dark;
+}
+
+.color-light {
+  @include size(100px);
+  background-color: $color-light;
+}
+.div-one {
+  @include size(100px);
+  border: 1px solid $color-light;
+}
+
+.div-two {
+  @include size(100px);
+  border: 1px solid $color-dark;
+}
+
+.div-three {
+  @include size(100px);
+  border: 1px solid $light-gray;
+}
+
+.div-four {
+  @include size(100px);
+  border: 1px solid $medium-gray;
+}
+
+.button {
+  @include button();
+}

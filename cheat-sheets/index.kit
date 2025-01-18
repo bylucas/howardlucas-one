@@ -1,0 +1,50 @@
+<!-- $title Cheat-Sheets -->
+<!-- $SEO-title A longer title for Cheat-Sheets -->
+<!-- $description This is the Cheat-Sheet index page -->
+<!-- $URL /cheat-sheets/ -->
+<!-- $image /images/not-there.png -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- @import ../includes/meta -->
+  
+  <title><!-- $title --></title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="cheat-sheets" onload="spinner()">
+  <div class="wrapper">
+<button id="topBtn" title="Back to top">Top</button>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
+  <header>
+ <div class="inner">
+   <p><a href="/">howardlucas</a> - <span>Cheat-Sheets</span></p>
+   <div class="picture"></div>
+  </div>
+</header>
+  <main>
+    <header class="page-header">
+   
+    <h1><!-- $title --></h1>
+   
+  </header>
+
+  <div class="index-wrap"></div>
+  </main>
+    <!-- @import 'includes-cheatsheets/_cheat-footer' -->
+<!-- @import '../includes/_modal' -->
+</div>
+</body>
+<script>
+  const linkTitle = 'Cheat-Sheets'
+</script>
+<!-- @import '../includes/_default-js' -->
+<script src="js-cheatsheets/all-links.js"></script>
+<script src="js-cheatsheets/sidebar-links.js"></script>
+<script src="js-cheatsheets/cheat-sheet.js"></script>
+</html>

@@ -1,0 +1,37 @@
+@use "../root/" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: $spacer*2;
+  border-top: 1px dashed $light-gray;
+  @include padding($spacer null);
+}
+
+.footer-links {
+margin-bottom: 10px;
+      
+a {
+  display: inline;
+  font-size: $third;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+}
+
+@include media(700) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+    }
+}
+
+.footer-links {
+    margin-bottom: 0;
+}
+}

@@ -3,28 +3,51 @@
 <!-- $description This is the Javascript page which will be the same header as the categories -->
 <!-- $URL /javascript/ -->
 <!-- $image /images/not-there.png -->
-<!-- $class javascript -->
 
-<!-- @import 'includes-javascript/_header' -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- @import ../includes/meta -->
+  
+  <title><!-- $title --></title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="javascript" onload="spinner()">
+  <div class="wrapper">
+<button id="topBtn" title="Back to top">Top</button>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
+  <header>
+ <div class="inner">
+   <p><a href="../">howardlucas</a> - <span>Javascript</span></p>
+   <!-- @import includes-javascript/navigation -->
+  </div>
+</header>
   <main>
     <header class="page-header">
    
-    <h1>Modern Javascript</h1>
+    <h1><!-- $title --></h1>
    
   </header>
 
   <div class="index-wrap"></div>
   </main>
-  <footer>
-  <a href="/">Home</a>
-  <a href="/javascript/basics/">Basics</a>
+    <footer class="footer">
+  <nav class="footer-links"><a href="/javascript/basics/">Basics</a> . <a href="/javascript/control-flow/">Control Flow</a></nav>
+  <p class="third">&copy;2025 <a href="/" title="howardlucas">howardlucas . </a><a class="modal-button" href="javascript:;">Contact . </a><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a></p>
 </footer>
+<!-- @import '../includes/_modal' -->
 </div>
 </body>
 <script>
   const linkTitle = 'Javascript'
 </script>
 <!-- @import '../includes/_default-js' -->
-
-<script src="js-javascript/javascript-links.js"></script>
+<script src="js-javascript/all-links.js"></script>
+<script src="js-javascript/sidebar-links.js"></script>
+<script src="js-javascript/javascript.js"></script>
 </html>

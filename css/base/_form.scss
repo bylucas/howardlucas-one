@@ -1,0 +1,47 @@
+// =======================
+// Forms
+// =======================
+@use "../root/" as *;
+
+input,
+select,
+textarea {
+  outline: 0;
+  font-family: $font;
+  font-size: $secondary;
+  border-color: $color-light;
+  border-width: 1px;
+  color: $medium-gray;
+  padding: 15px;
+  background: transparent;
+}
+
+#{$all-text-inputs},
+select {
+  width: 100%;
+  &:focus {
+    border-color: $black;
+    //box-shadow: inset 0 0 2px $color-dark;
+    outline: 0;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    border-color: $error-color;
+    opacity: 0.5;
+  }
+  &::placeholder {
+    color: $color-light;
+    opacity: 0.4;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+  @include size(18px);
+  margin-right: 3px;
+}

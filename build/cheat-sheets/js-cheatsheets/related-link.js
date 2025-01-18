@@ -1,0 +1,1 @@
+const bottomLinks=document.querySelector(".related-wrap"),relatedLinks=()=>{if("cheatCat"===linkCat)cheatLinks.forEach((e=>{if(e!==linkTitle){let t=`<div class="related-post">\n    <h3><a href="/cheat-sheets/${e.toLowerCase().split(" ").join("-")}.html">${e}</a></h3>\n    </div>`;bottomLinks.innerHTML+=t}}));else console.log("no related Posts")};relatedLinks();

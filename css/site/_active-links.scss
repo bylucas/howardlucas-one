@@ -1,6 +1,10 @@
+@use "../root/" as *;
+
 .javascript #javascript,
 .basics #basics,
+.control-flow #control-flow,
+.cheat-sheets #cheat-sheets,
 .active {
-  color: seagreen;
+  color: tint($color-light, 40) !important;
   cursor: not-allowed;
 }

@@ -1,0 +1,140 @@
+// ===============================================
+// Utilities like back to top or other javascript
+// see utilities in the test folder.
+// ===============================================
+@use "../root/" as *;
+// =======================
+// Back to Top
+// =======================
+#topBtn {
+  text-align: center;
+  @include border-right-radius(0);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background: $color-dark;
+  display: none;
+  padding: .5rem;
+  font-size: $third;
+  letter-spacing: 1px;
+  color: $white;
+  z-index: 101;
+}
+
+@include media(700) {
+  #topBtn {
+  bottom: 70px;
+}
+}
+
+// =======================
+///Loader
+// =======================
+
+#loader-wrapper {
+    @include position(fixed, 0 null null 0);
+    @include size(100%);
+    z-index: 1000;
+}
+
+#loader {
+    @include size(100px);
+    @include margin(-50px 0 0 -50px);
+    border: 3px solid transparent;
+} 
+
+#loader {
+    display: block;
+    @include position(relative, 50% null null 50%);
+    border-radius: 50%;
+    border-top-color: $color-light;
+    animation: spin 2s linear infinite;
+    z-index: 1001;
+}
+
+ #loader:before {
+        border: 3px solid transparent;
+    }
+
+    #loader:before {
+        content: "";
+        @include position(absolute, 5px 5px 5px 5px);
+        border-radius: 50%;
+        border-top-color: $color-dark;
+        animation: spin 3s linear infinite;
+    }
+ #loader:after {
+    border: 3px solid transparent;
+    }
+
+    #loader:after {
+        content: "";
+        @include position(absolute, 15px 15px 15px 15px);
+        border-radius: 50%;
+        border-top-color: $light-gray;
+          animation: spin 1.5s linear infinite;
+    }
+
+
+    @-webkit-keyframes spin {
+        0%   { 
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        @include position(fixed, 0 null null null);
+        @include size(51%, 100%);
+        background: #222222;
+        z-index: 1000;
+        transform: translateX(0);
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded#loader-wrapper .loader-section.section-left {
+                transform: translateX(-100%);
+
+                transition: all 0.9s 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded#loader-wrapper .loader-section.section-right {
+                transform: translateX(100%); 
+ 
+        transition: all 0.9s 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded#loader {
+        visibility: hidden;
+        opacity: 0; 
+                transition: all 0.1s ease-out;
+    }
+    .loaded#loader-wrapper {
+        visibility: hidden;
+                opacity: 0;
+         
+                transition: all 1s 1s ease-out;
+    }
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }

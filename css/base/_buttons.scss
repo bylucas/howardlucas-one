@@ -10,6 +10,8 @@
   appearance: none;
   cursor: pointer;
   display: inline-block;
+  background-color: $color-light;
+  color: $white;
   -webkit-font-smoothing: antialiased;
   line-height: 1;
   text-align: center;
@@ -19,11 +21,11 @@
   vertical-align: middle;
   white-space: nowrap;
   font-family: $heading-font;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
   border: 0;
   border-radius: $radius;
-  font-size: $third;
-  padding: 15px 20px;
+  font-size: $secondary;
+  padding: 10px 15px;
 
   &:disabled {
     cursor: not-allowed;
@@ -35,16 +37,8 @@ button {
   position: relative;
   overflow: hidden;
   transition: background 400ms;
-  //color: #fff;
-  //background-color: #6200ee;
-  //padding:1.5rem 3rem;
-  //font-family: 'Roboto', sans-serif;
-  //font-size: 1.5rem;
   outline: 0;
-  //border: 0;
-  //border-radius: 0.25rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
-  //cursor: pointer;
 }
 
 span.ripple {
@@ -58,6 +52,6 @@ span.ripple {
 @keyframes ripple {
   to {
     transform: scale(4);
-    opacity:0;
+    opacity: 0;
   }
 }

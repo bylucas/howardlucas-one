@@ -1,6 +1,5 @@
 @use "../root/" as *;
 
-
 html {
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: $light-gray;
@@ -23,9 +22,9 @@ a {
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
-    color: $hover-color;
+      color: $hover-color;
+    }
   }
-}
 }
 
 //layout
@@ -33,35 +32,51 @@ a {
   @include padding(null 5%);
 }
 
-header {
-  //width: 100%;
-}
-
 .inner {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-between;
-align-items: center;
-border-bottom: 6px solid $light-gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 6px solid $light-gray;
 
-  p, span {
+  p,
+  span {
     font-family: $heading-font;
-    line-height: 1.4;
-    font-size: 1.2rem;
-    letter-spacing: 3px;
+    //line-height: 1.4;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
     margin: 0;
+    margin-top: 8px;
+  }
+  .picture {
+    @include size(70px);
+    background-image: url(../apple-touch-icon.png);
+    background-position: center center;
+    background-size: contain;
   }
 }
 
+.nav-picture {
+  @include size(80px);
+  @include center;
+    background-image: url(../apple-touch-icon.png);
+    border: 5px solid $color-light;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
 @include media(900) {
-.wrapper {
-  padding: 0;
-}
-.inner,
-main,
-footer {
-max-width: 960px;
-@include center; 
-}
+  .wrapper {
+    padding: 0;
+  }
+  .inner,
+  main,
+  footer {
+    max-width: 960px;
+    @include center;
+  }
 }

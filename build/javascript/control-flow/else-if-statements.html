@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A longer title for the Else If Statements page</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="description" content="This is the Else If Statements page which will not be the same header as the Javascript">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <link rel="canonical" href="https://howardlucas.co.uk/javascript/basics/else-if-statements.html" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <meta property="og:site_name" content="howardlucas">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="A longer title for the Else If Statements page">
+  <meta property="og:description" content="This is the Else If Statements page which will not be the same header as the Javascript">
+  <meta property="og:url" content="https://howardlucas.co.uk/javascript/basics/else-if-statements.html">
+  <meta property="og:image" content="https://howardlucas.co.uk//images/not-there.png">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A longer title for the Else If Statements page">
+  <meta name="twitter:description" content="This is the Else If Statements page which will not be the same header as the Javascript">
+  <meta name="twitter:url" content="https://howardlucas.co.uk/javascript/basics/else-if-statements.html">
+  <meta name="twitter:image" content="https://howardlucas.co.uk//images/not-there.png">
+  <meta property="og:image:width" content="1020">
+  <meta property="og:image:height" content="457">
+
+  <title>Else If Statements</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body class="" onload="spinner()">
+
+<div class="wrapper">
+<button id="topBtn" title="Back to top">Top</button>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+  <header>
+ <div class="inner">
+   <p><a href="../../">howardlucas</a> - <a href="../">Javascript</a></p>
+   <nav id="site-navigation" class="main-navigation">
+   
+      <div class="hamburger menu-toggle hamburger--squeeze" aria-controls="primary-menu" aria-expanded="false">
+       <div class="hamburger-box">
+         <div class="hamburger-inner"></div>
+       </div>
+     </div>
+   
+   <section class="menu-wrap">
+     <div class="nav-picture"></div>
+     <ul role='list' class="top-links">
+     <li><a href="/">howardlucas</a></li>
+     <li><a href="/cheat-sheets/">Cheat-Sheets</a></li>
+     <li><a href="/blog/">Blog</a></li>
+   </ul>
+        <ul role='list'>
+          <li><a id="javascript" href="/javascript/">Modern Javascript</a>
+           
+           <ul role='list'>
+           <li><a id="basics" class="line" href="/javascript/basics/">Basics</a>
+             
+             <ul role='list' class="insert-basic-links"></ul>
+             </li>
+           </ul>
+           
+           <ul role='list'>
+           <li><a id="control-flow" class="line" href="/javascript/control-flow/">Control Flow</a>
+             
+             <ul role='list' class="insert-control-links"></ul>
+           </li>
+           </ul>
+           
+           </li>
+           </ul>
+         
+         </section>
+       </nav>
+  </div>
+</header>
+  
+  <main>
+   <header class="post-header">
+   
+    <h1>Else If Statements</h1>
+
+     <div class="post-meta">
+         
+        <span class="cat-links">#<a href="/javascript/control-flow/">Control Flow</a></span>
+      </div>
+   
+  </header>
+
+  <div class="post-content">
+    
+  <p>Using <em>else if statements</em> we can offer feedback to users even if the conditions are false.</p>
+
+<pre><code class="lang-js">const password = 'p@ssword123456';
+
+if(password.length &gt;= 12){
+
+console.log('that password is mighty strong');
+
+} else if(password.length &gt;= 8){
+
+console.log('that password is long enough');
+
+} else {
+
+console.log('password should be at least 8 characters long');
+}
+//answer: that password is mighty strong
+
+//the above if statement runs through the if statement checking if the condition is true, if not it runs through the else if statement and checks if the condition is true. Finally if both conditions are false then it will fire the else (fallback) condition. the user will always see a result</code></pre>
+
+  </div>
+   <div class="related-post-wrap">
+  <h2>Similar in Control Flow</h2>
+  <div class="related-wrap"></div>
+</div>
+  </main>
+  <footer class="footer">
+    <nav class="footer-links"><a href="/javascript/">Javascript . </a><a href="/javascript/basics/">Basics</a></nav>
+    <p class="third">&copy;2025 <a href="/" title="howardlucas">howardlucas . </a><a class="modal-button" href="javascript:;">Contact . </a><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a></p>
+  </footer>
+  <div class="popup-wrapper">
+      <div class="popup">
+        <div class="popup-close">X</div>
+        
+        <div class="popup-content">
+          <h3>Contact Form</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sint quam ipsa molestias ad pariatur aspernatur mollitia repudiandae! Dignissimos unde doloremque voluptates magni nulla vitae a neque dolores laborum libero?</p>
+         <form class="contact-form">
+            <input class="subscribe" type="text" id="name" placeholder="your name" required />
+            <input class="subscribe" type="email" id="email" placeholder="youremail@example.com" required />
+            <textarea class="subscribe" id="message" placeholder="How can we help?" required></textarea>
+            <div class="feedback">You Did It!.... We'll be in-touch shortly</div>
+            <button type="submit" class="contact-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+<script>
+  const linkTitle = 'Else If Statements'
+  const linkCat = 'controlCat'
+</script>
+
+<script src="../../js/navigation.js"></script>
+<script src="../../js/app.js"></script>
+<script src="../../js/prism.js"></script>
+
+<script src="../js-javascript/all-links.js"></script>
+<script src="../js-javascript/sidebar-links.js"></script>
+<script src="../js-javascript/related-link.js"></script>
+</html>

@@ -1,0 +1,62 @@
+<!-- $title Else If Statements -->
+<!-- $SEO-title A longer title for the Else If Statements page -->
+<!-- $description This is the Else If Statements page which will not be the same header as the Javascript -->
+<!-- $URL /javascript/basics/else-if-statements.html -->
+<!-- $image /images/not-there.png -->
+
+
+<!-- @import '../includes-javascript/_header-cats' -->
+  
+  <main>
+   <header class="post-header">
+   
+    <h1><!-- $title --></h1>
+
+     <div class="post-meta">
+         
+        <span class="cat-links">#<a href="/javascript/control-flow/">Control Flow</a></span>
+      </div>
+   
+  </header>
+
+  <div class="post-content">
+    
+  <p>Using <em>else if statements</em> we can offer feedback to users even if the conditions are false.</p>
+
+<pre><code class="lang-js">const password = 'p@ssword123456';
+
+if(password.length &gt;= 12){
+
+console.log('that password is mighty strong');
+
+} else if(password.length &gt;= 8){
+
+console.log('that password is long enough');
+
+} else {
+
+console.log('password should be at least 8 characters long');
+}
+//answer: that password is mighty strong
+
+//the above if statement runs through the if statement checking if the condition is true, if not it runs through the else if statement and checks if the condition is true. Finally if both conditions are false then it will fire the else (fallback) condition. the user will always see a result</code></pre>
+
+  </div>
+   <div class="related-post-wrap">
+  <h2>Similar in Control Flow</h2>
+  <div class="related-wrap"></div>
+</div>
+  </main>
+  <!-- @import '../includes-javascript/_control-footer' -->
+  <!-- @import '../../includes/_modal' -->
+</div>
+</body>
+<script>
+  const linkTitle = 'Else If Statements'
+  const linkCat = 'controlCat'
+</script>
+<!-- @import '../../includes/_default-js' -->
+<script src="../js-javascript/all-links.js"></script>
+<script src="../js-javascript/sidebar-links.js"></script>
+<script src="../js-javascript/related-link.js"></script>
+</html>

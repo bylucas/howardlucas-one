@@ -1,0 +1,104 @@
+// =======================
+// Modal
+// =======================
+@use "../root/" as *;
+
+.popup-wrapper {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 102;
+
+  .popup {
+    text-align: center;
+    border-radius: 6px;
+    width: 100%;
+    margin: 5% auto;
+    padding: $spacer;
+    background: $white;
+    position: relative;
+    //color: $black;
+    opacity: 0;
+    transition: opacity 5s ease;
+
+    h3 {
+      //margin-top: $spacer;
+      @include margin(15px null);
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      font-weight: 300;
+      //color: #51B924;
+    }
+    p {
+      font-weight: 300;
+    }
+  }
+
+  .popup-content {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .subscribe {
+    border: none;
+    border-radius: none;
+    border-bottom: 1px solid $color-light;
+    margin-bottom: 20px;
+    &:focus {
+      border-bottom: 1.5px solid $black;
+
+      &::placeholder {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  .contact-submit {
+    width: 120px;
+    margin: 10px auto;
+    @include button();
+  }
+
+  .feedback {
+    font-size: $secondary;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: $color-dark;
+    padding-bottom: 12px;
+    display: none;
+  }
+
+  .popup-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: $medium-gray;
+
+    &:hover {
+      color: $dark-gray;
+    }
+  }
+}
+
+.popup.enter {
+  opacity: 1;
+}
+
+@include media(700) {
+  .popup-wrapper {
+    .popup {
+      width: 65%;
+      padding: $spacer $spacer * 1.4;
+    }
+
+    .popup-content {
+      max-width: 600px;
+    }
+  }
+}
