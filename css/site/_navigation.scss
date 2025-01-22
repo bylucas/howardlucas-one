@@ -40,11 +40,8 @@
   } //end line
 
   ul {
-    //margin-bottom: 7px;
-    //padding-bottom: 0;
     font-weight: 300;
     letter-spacing: 1px;
-    //border-bottom: 0;
     li {
       margin-left: 0;
       font-size: 1.2rem;
@@ -54,22 +51,23 @@
   ul ul {
     border-bottom: 1px dashed $menu-line;
     margin-bottom: 12px;
-    //padding-bottom: 4px;
-    //padding-top: 5px;
-    //margin-left: 5px;
     li {
       font-size: 1.1rem;
+      padding-top: 6px;
     }
   }
 
   ul ul ul {
     border-bottom: 0;
-    //margin-top: 5px;
+    margin-bottom: 20px;
+    margin-top: 8px;
 
     li {
       margin-left: 5px;
+      margin-bottom: 7px;
+      padding-top: 0;
       font-size: 0.9rem;
-      line-height: 1.9;
+      line-height: 1.3;
     }
   }
 }

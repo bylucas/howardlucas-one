@@ -1,1 +1,0 @@
-const insertIndexLinks=document.querySelector(".index-wrap");cheatLinks.forEach((e=>{let n=`<div class="index-content"><h2><a href="/cheat-sheets/${e.toLowerCase().split(" ").join("-")}.html">${e}</a></h2></div>`;insertIndexLinks.innerHTML+=n}));

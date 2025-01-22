@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A longer title for the Command Line Basics page</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="description" content="This is the Command Line Basics page">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <link rel="canonical" href="https://howardlucas.co.uk/blog/cheat-sheets/command-line-basics.html" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <meta property="og:site_name" content="howardlucas">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="A longer title for the Command Line Basics page">
+  <meta property="og:description" content="This is the Command Line Basics page">
+  <meta property="og:url" content="https://howardlucas.co.uk/blog/cheat-sheets/command-line-basics.html">
+  <meta property="og:image" content="https://howardlucas.co.uk//images/not-there.png">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A longer title for the Command Line Basics page">
+  <meta name="twitter:description" content="This is the Command Line Basics page">
+  <meta name="twitter:url" content="https://howardlucas.co.uk/blog/cheat-sheets/command-line-basics.html">
+  <meta name="twitter:image" content="https://howardlucas.co.uk//images/not-there.png">
+  <meta property="og:image:width" content="1020">
+  <meta property="og:image:height" content="457">
+
+  <title>Command Line Basics</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body class="" onload="spinner()">
+
+<div class="wrapper">
+<button id="topBtn" title="Back to top">Top</button>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+  <header>
+ <div class="inner">
+  <div class="logo-box">
+    <a href="/"><img src="../../apple-touch-icon.png" alt=""></a>
+    <p> - <a href="/blog/">Blog</a></p>
+  </div>
+   
+   <nav id="site-navigation" class="main-navigation">
+   
+      <div class="hamburger menu-toggle hamburger--squeeze" aria-controls="primary-menu" aria-expanded="false">
+       <div class="hamburger-box">
+         <div class="hamburger-inner"></div>
+       </div>
+     </div>
+   
+   <section class="menu-wrap">
+     <div class="nav-picture"></div>
+     <ul role='list' class="top-links">
+     <li><a href="/">howardlucas</a></li>
+     <li><a href="/javascript/">Javascript</a></li>
+     
+   </ul>
+        <ul role='list'>
+          <li><a id="blog" href="/blog/">Blog</a>
+           
+           <ul role='list'>
+           <li><a id="cheat-sheets" class="line" href="/blog/cheat-sheets/">Cheat-Sheets</a>
+             
+             <ul role='list' class="insert-html-links"></ul>
+           </li>
+           </ul>
+   
+           <ul role='list'>
+           <li><a id="css" class="line" href="/blog/css/">Css</a>
+             
+             <ul role='list' class="insert-css-links"></ul>
+             </li>
+           </ul>
+           
+           </li>
+           </ul>
+         
+         </section>
+       </nav>
+  </div>
+</header>
+  
+  <main>
+   <header class="post-header">
+   
+    <h1>Command Line Basics</h1>
+
+     <div class="post-meta">
+         
+        <span class="cat-links">#<a href="/blog/cheat-sheets/">Cheat-Sheets</a></span>
+      </div>
+   
+  </header>
+
+  <div class="post-content">
+
+<img src="../../images/howardlucas-site.png" alt="" />
+
+<p>The <code>Command Line</code> is a text based interface that exists on every operating system in some form, <em>eg <code>Terminal</code> on the Mac</em>. By typing commands in the Terminal you can access files, install and manipulate programs and communicate with the computer internal workings. <em>Pretty much everything is available via Terminal</em>.</p>
+
+<p>Programmers use the <code>Command Line</code> to install packages, <em>eg through NPM</em>, to aid coding and developing their projects. It&#8217;s also used to upload and download projects to platforms like <code>Github</code>. The <code>Command Line</code> can seem a little daunting, but with a few basic commands, <em>like below</em>, will give you a basic understanding of how the <code>Command Line</code> works.</p>
+
+<hr>
+
+<h2>SHORTCUTS</h2>
+
+<p class="secondary"><code>Tab</code> - <em>Auto-complete files and folder names</em></p>
+
+<p class="secondary"><code>Ctrl + A</code> - <em>Go to the beginning of the line you are currently typing on</em></p>
+
+<p class="secondary"><code>Ctrl + E</code> - <em>Go to the end of the line you are currently typing on</em></p>
+
+<p class="secondary"><code>Ctrl + U</code> - <em>Clear the line before the cursor</em></p>
+
+<p class="secondary"><code>Ctrl + K</code> - <em>Clear the line after the cursor</em></p>
+
+<p class="secondary"><code>Ctrl + W</code> - <em>Delete the word before the cursor</em></p>
+
+<p class="secondary"><code>Ctrl + T</code> - <em>Swap the last two characters before the cursor</em></p>
+
+<p class="secondary"><code>Esc + T</code> - <em>Swap the last two words before the cursor</em></p>
+
+<p class="secondary"><code>Ctrl + R</code> - <em>Lets you search through previously used commands</em></p>
+
+<p class="secondary"><code>Ctrl + L</code> or <code>Command + K</code> - <em>Clears the Screen</em></p>
+
+<p class="secondary"><code>Ctrl + C</code> - <em>Kill whatever you are running</em></p>
+
+<p class="secondary"><code>Ctrl + D</code> - <em>Exit the current shell</em></p>
+
+<hr>
+
+<h2>CORE COMMANDS</h2>
+
+<p class="secondary"><code>pwd</code> - <em>Print working directory - displays the file path from the root directory to the current directory</em></p>
+
+<p class="secondary"><code>cd</code> - <em>Home directory</em></p>
+
+<p class="secondary"><code>cd [folder name]</code> - <em>Change to named directory</em></p>
+
+<p class="secondary"><code>cd ~</code> - <em>Home directory, e.g. cd ~/folder/</em></p>
+
+<p class="secondary"><code>cd /</code> - <em>Root of drive</em></p>
+
+<p class="secondary"><code>ls</code> - <em>Short listing</em></p>
+
+<p class="secondary"><code>ls -l</code> - <em>Long listing</em></p>
+
+<p class="secondary"><code>ls -a</code> - <em>Listing incl. hidden files</em></p>
+
+<p class="secondary"><code>ls -t</code> - <em>Lists all content by time they were last modified</em></p>
+
+<p class="secondary"><code>ls -lh</code> - <em>Long listing with Human readable file sizes</em></p>
+
+<p class="secondary"><code>ls -R</code> - <em>Entire content of folder recursively</em></p>
+
+<p class="secondary"><code>sudo [command]</code> - <em>Run command with the security privileges of the superuser (requires password)</em></p>
+
+<p class="secondary"><code>open [file]</code> - <em>Opens a file</em></p>
+
+<p class="secondary"><code>open .</code> - <em>Opens the directory</em></p>
+
+<p class="secondary"><code>top</code> - <em>Displays active processes. Press q to quit</em></p>
+
+<p class="secondary"><code>nano [file]</code> - <em>Opens the Terminal editor</em></p>
+
+<p class="secondary"><code>pico [file]</code> - <em>Opens the Terminal editor</em></p>
+
+<p class="secondary"><code>q</code> - <em>Exit</em></p>
+
+<p class="secondary"><code>clear</code> - <em>Clear screen</em></p>
+
+<hr>
+
+<h2>COMMAND HISTORY</h2>
+
+<p class="secondary"><code>history n</code> - <em>Shows the stuff typed - add a number to limit the last n items</em></p>
+
+<p class="secondary"><code>ctrl-r</code> - <em>Interactively search through previously typed commands</em></p>
+
+<p class="secondary"><code>![value]</code> - <em>Execute the last command typed that starts with value</em></p>
+
+<p class="secondary"><code>!!</code> - <em>Execute the last command typed</em></p>
+
+<hr>
+
+<h2>FILE MANAGEMENT</h2>
+
+<p class="secondary"><code>touch [file]</code> - <em>Create new file in the current working directory</em></p>
+
+<p class="secondary"><code>pwd</code> - <em>Full path to working directory</em></p>
+
+<p class="secondary"><code>..</code> - <em>Parent/enclosing directory</em></p>
+
+<p class="secondary"><code>ls ..</code> - <em>Long listing of parent directory</em></p>
+
+<p class="secondary"><code>cd ../../</code>- <em>Move 2 levels up</em></p>
+
+<p class="secondary"><code>.</code> - <em>Current folder</em></p>
+
+<p class="secondary"><code>cat</code> - <em>Concatenate to screen</em></p>
+
+<p class="secondary"><code>rm [file]</code> - <em>Remove a file</em></p>
+
+<p class="secondary"><code>rm -i [file]</code> - <em>Remove with confirmation</em></p>
+
+<p class="secondary"><code>rm -r [dir]</code> - <em>Remove a directory and contents</em></p>
+
+<p class="secondary"><code>rm -f [file]</code> - <em>Force removal without confirmation</em></p>
+
+<p class="secondary"><code>rm -i [file]</code> - <em>Will display prompt before</em></p>
+
+<p class="secondary"><code>cp [file] [newfile]</code> - <em>Copy file</em></p>
+
+<p class="secondary"><code>cp [file] [dir]</code> - <em>Copy file to directory</em></p>
+
+<p class="secondary"><code>mv [file] [new filename]</code> - <em>Move/Rename, e.g. mv -v [file][dir]</em></p>
+
+<hr>
+
+<h2>DIRECTORY MANAGEMENT</h2>
+
+<p class="secondary"><code>mkdir [dir]</code> - <em>Create new directory</em></p>
+
+<p class="secondary"><code>mkdir -p [dir]/[dir]</code> - <em>Create nested directories</em></p>
+
+<p class="secondary"><code>rmdir [dir]</code> - <em>Remove directory ( only works with empty directories )</em></p>
+
+<p class="secondary"><code>rm -R [dir]</code> - <em>Remove directory and contents</em></p>
+
+<hr>
+
+<h2>PIPES</h2>
+
+<p class="secondary"><em>Allows to combine multiple commands that generate output</em></p>
+
+<p class="secondary"><code>more</code> - <em>Output content delivered in screensize chunks</em></p>
+
+<p class="secondary"><code>&gt; [file]</code> - <em>Push output to file, keep in mind it will get overwritten</em></p>
+
+<p class="secondary"><code>&gt;&gt; [file]</code> - <em>Append output to existing file</em></p>
+
+<p class="secondary"><code>&lt;</code> - <em>Tell command to read content from a file</em></p>
+
+<hr>
+
+<h2>HELP</h2>
+
+<p class="secondary"><code>[command] -h</code> - <em>Offers help</em></p>
+
+<p class="secondary"><code>[command] --help</code> - <em>Offers help</em></p>
+
+<p class="secondary"><code>[command] help</code> - <em>Offers help</em></p>
+
+<p class="secondary"><code>reset</code> - <em>Resets the terminal display</em></p>
+
+<p class="secondary"><code>man [command]</code> - <em>Show the help for command</em></p>
+
+<p class="secondary"><code>whatis [command]</code> - <em>Gives a one-line description of command</em></p>
+
+</div>
+   <div class="related-post-wrap">
+  <h2>Similar in Cheat Sheets</h2>
+  <div class="related-wrap"></div>
+</div>
+  </main>
+  <footer class="footer">
+    <nav class="footer-links"><a href="/blog/">Blog</a> . #<a href="/blog/css/">Css</a></nav>
+    <p class="third">&copy;2025 <a href="/" title="howardlucas">howardlucas . </a><a class="modal-button" href="javascript:;">Contact . </a><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a></p>
+  </footer>
+  <div class="popup-wrapper">
+      <div class="popup">
+        <div class="popup-close">X</div>
+        
+        <div class="popup-content">
+          <h3>Contact Form</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sint quam ipsa molestias ad pariatur aspernatur mollitia repudiandae! Dignissimos unde doloremque voluptates magni nulla vitae a neque dolores laborum libero?</p>
+         <form class="contact-form">
+            <input class="subscribe" type="text" id="name" placeholder="your name" required />
+            <input class="subscribe" type="email" id="email" placeholder="youremail@example.com" required />
+            <textarea class="subscribe" id="message" placeholder="How can we help?" required></textarea>
+            <div class="feedback">You Did It!.... We'll be in-touch shortly</div>
+            <button type="submit" class="contact-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+<script>
+  const linkTitle = 'Command Line Basics'
+  const linkCat = 'cheatCat'
+</script>
+
+<script src="../../js/navigation.js"></script>
+<script src="../../js/app.js"></script>
+<script src="../../js/prism.js"></script>
+
+<script src="../js-blog/all-links.js"></script>
+<script src="../js-blog/sidebar-links.js"></script>
+<script src="../js-blog/related-link.js"></script>
+</html>

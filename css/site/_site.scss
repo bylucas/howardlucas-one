@@ -34,21 +34,34 @@ a {
 
 .inner {
   display: flex;
-  flex-direction: row;
+  //flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   border-bottom: 6px solid $light-gray;
+  margin-top: 10px;
+
+  .logo-box {
+    display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    @include size(70px);
+  }
 
   p,
   span {
     font-family: $heading-font;
-    //line-height: 1.4;
     font-size: 1.1rem;
     letter-spacing: 2px;
     margin: 0;
     margin-top: 8px;
   }
+  }
+
+  
   .picture {
     @include size(70px);
     background-image: url(../apple-touch-icon.png);
