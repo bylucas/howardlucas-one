@@ -59,9 +59,10 @@
      </div>
    
    <section class="menu-wrap">
-     <div class="nav-picture"></div>
+     <div class="nav-picture">
+       <a href="/"><img src="../../apple-touch-icon.png" alt=""></a>
+     </div>
      <ul role='list' class="top-links">
-     <li><a href="/">howardlucas</a></li>
      <li><a href="/javascript/">Javascript</a></li>
      
    </ul>
@@ -86,7 +87,7 @@
            </ul>
          
          </section>
-       </nav>
+         </nav>
   </div>
 </header>
   
@@ -252,7 +253,7 @@ My email address is &lt;you@yourlink.org&gt;
 
 <p>You should <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x79;&#x6f;&#117;&#x40;&#x79;&#x6f;&#x75;&#114;&#108;&#105;&#110;&#107;&#46;&#111;&#114;&#x67;">&#101;&#109;&#x61;&#x69;&#x6c; &#x6d;&#101;</a></p>
 
-<p>My email address is <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#104;&#x40;&#104;&#x6f;&#x77;&#x61;&#114;&#x64;&#108;&#x2e;&#x6f;&#114;&#x67;">&#x68;&#x40;&#x68;&#x6f;&#x77;&#97;&#x72;&#x64;&#108;&#x2e;&#x6f;&#114;&#x67;</a></p>
+<p>My email address is <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#x79;&#x6f;&#x75;&#64;&#x79;&#111;&#x75;&#x72;&#108;&#x69;&#x6e;&#x6b;&#x2e;&#x6f;&#x72;&#103;">&#x79;&#x6f;&#117;&#x40;&#x79;&#111;&#x75;&#114;&#x6c;&#105;&#110;&#x6b;&#x2e;&#111;&#114;&#x67;</a></p>
 
 <hr />
 
@@ -495,30 +496,29 @@ elsewhere in the document:
 
 <h3>Styled Images</h3>
 
-<p>The original image is 200px x 220px as seen in the Inline and Reference images above. We can change the size to 100px x 110px and display it with a image class <code>img-framed</code></p>
+<p>The original image is 200px x 220px as seen in the Inline and Reference images above. We can change the size to 150px x 155px and display it with a image class <code>img-framed</code></p>
 
 <pre><code class="language-markdown">![Image Framed][img-framed]
 
 Below can appear anywhere in the document
 [img-framed]: ../../images/elephant.jpg &quot;Image Framed&quot;
-width=&quot;100px&quot; height=&quot;110px&quot;
+width=&quot;150px&quot; height=&quot;155px&quot;
 class=&quot;img-framed&quot;
 </code></pre>
 
 <p>img-framed css class somewhere on the stylesheet</p>
 
 <pre><code class="language-css">.img-framed {
-    padding: 1rem;
-    border-radius: 5px;
-    border: 1px solid #000;
-    box-shadow: 2px 2px 2px #848484; 
-}
-</code></pre>
+ padding: 1rem;
+ border-radius: 5px;
+ border: 1px solid #000;
+ box-shadow: 2px 2px 2px #848484; 
+}</code></pre>
 
 <p class="nearer"><strong>Result</strong></p>
 
 <figure>
-<img src="../../images/elephant.jpg" alt="Image Framed" id="img-framed" title="Image Framed" style="height:110px;width:100px;" class="img-framed" />
+<img src="../../images/elephant.jpg" alt="Image Framed" id="img-framed" title="Image Framed" style="height:155px;width:150px;" class="img-framed" />
 <figcaption>Image Framed</figcaption>
 </figure>
 
@@ -527,7 +527,7 @@ class=&quot;img-framed&quot;
 <pre><code class="language-markdown">![circle image][image_circle]
 
 [image_circle]: ../../images/two-men.jpg &quot;&quot;
-width=&quot;100px&quot; height=&quot;110px&quot;
+width=&quot;150px&quot; height=&quot;155px&quot;
 class=&quot;img-circle&quot;
 </code></pre>
 
@@ -535,13 +535,12 @@ class=&quot;img-circle&quot;
 
 <pre><code class="language-css">.img-circle {
 border-radius: 50rem !important;
-}
-</code></pre>
+}</code></pre>
 
 <p class="nearer"><strong>Result</strong></p>
 
 <figure>
-<img src="../../images/two-men.jpg" alt="circle image" id="image_circle" style="height:100px;width:90px;" class="img-circle" />
+<img src="../../images/two-men.jpg" alt="circle image" id="image_circle" style="height:155px;width:150px;" class="img-circle" />
 <figcaption>circle image</figcaption>
 </figure>
 

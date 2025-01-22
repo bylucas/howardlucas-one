@@ -60,26 +60,19 @@ a {
     margin-top: 8px;
   }
   }
-
-  
-  .picture {
-    @include size(70px);
-    background-image: url(../apple-touch-icon.png);
-    background-position: center center;
-    background-size: contain;
-  }
 }
 
 .nav-picture {
-  @include size(80px);
   @include center;
-    background-image: url(../apple-touch-icon.png);
     border: 5px solid $color-light;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
     border-radius: 50px;
     margin-bottom: 15px;
+    padding: 5px 10px;
+    background-color: white;
+    overflow: hidden;
+    img {
+    @include size(60px);
+  }
 }
 
 @include media(900) {
