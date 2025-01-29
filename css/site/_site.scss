@@ -10,6 +10,7 @@ body {
   font-family: $font;
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $font-size;
+  font-weight: 300;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
@@ -43,34 +44,35 @@ a {
 
   .logo-box {
     display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 
-  img {
-    @include size(70px);
-  }
+    img {
+      @include size(70px);
+      margin-right: 8px;
+    }
 
-  p,
-  span {
-    font-family: $heading-font;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    margin: 0;
-    margin-top: 8px;
-  }
+    p,
+    span {
+      font-family: $heading-font;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      margin: 0;
+      margin-top: 8px;
+    }
   }
 }
 
 .nav-picture {
   @include center;
-    border: 5px solid $color-light;
-    border-radius: 50px;
-    margin-bottom: 15px;
-    padding: 5px 10px;
-    background-color: white;
-    overflow: hidden;
-    img {
+  border: 5px solid $color-light;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  background-color: white;
+  overflow: hidden;
+  img {
     @include size(60px);
   }
 }

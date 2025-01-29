@@ -46,7 +46,7 @@
   <header>
  <div class="inner">
   <div class="logo-box">
-    <a href="/"><img src="../../apple-touch-icon.png" alt=""></a>
+    <a href="/"><img src="../../images/bylucas-lgo-text.webp" alt="bylucas logo"></a>
     <p> - <a href="/blog/">Blog</a></p>
   </div>
    
@@ -60,7 +60,7 @@
    
    <section class="menu-wrap">
      <div class="nav-picture">
-       <a href="/"><img src="../../apple-touch-icon.png" alt=""></a>
+       <a href="/"><img src="../../images/bylucas-lgo-text.webp" alt="bylucas logo"></a>
      </div>
      <ul role='list' class="top-links">
      <li><a href="/javascript/">Javascript</a></li>
@@ -108,7 +108,7 @@
 <img src="../../images/howardlucas-site.png" alt="" />
 
 <blockquote>
-<p>Markdown and MultiMarkdown for writing quicker html articles and posts. Easy to pick up as you will see from this article which explains all you need to know to get you started. Give it a try, forget about the <em>html</em> tags and write quicker and cleaner posts/articles.</p>
+<p>Markdown and MultiMarkdown for writing quicker html articles and posts. Easy to pick up as you will see from this article which explains all you need to know to get you started.</p>
 
 <p>Much of the following article is taken from <a href="https://daringfireball.net/projects/markdown/syntax#backslash">daringfireball.net</a> and <a href="http://fletcherpenney.net/multimarkdown/">fletcherpenny.net</a>.</p>
 </blockquote>
@@ -169,14 +169,14 @@
 <p>MultiMarkdown has support for metadata, meaning that you can include information about a document that is not necessarily part of the document contents.
 To use metadata, simply add information to the top of a Markdown file:</p>
 
-<pre><code class="language-markdown">Title:  A New MultiMarkdown Document  
+<pre><code class="language-markdown">Title: A New Document  
 Author: John Doe
 Date:   July 25, 2005  
-Address: Some Road, Some Town, Some City L67 QPE  
+Address: Some City L67 QPE  
 Copyright: yoursite.org  
 Email: you@youremail.org
 Web: https://yoursite.org    
-Keywords: one, two, three, four, five, six
+Keywords: one, two, three
 </code></pre>
 
 <p>The above metadata is the more common metadata information, for more metadata information see <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">MultiMarkdown Syntax Guide</a></p>
@@ -192,7 +192,7 @@ You’d probably include Metadata when writing fresh html pages or Markdown docu
 
 <p>Cross-references will become your new best friend when writing long documents. They will highly improve the navigability of the generated documents by giving the reader links to jump across sections with a single click. As seen in the Summary section of the document.</p>
 
-<p><strong>Example</strong></p>
+<p class="nearer"><strong>Example</strong></p>
 
 <pre><code class="language-markdown">Clicking [here][summary] will lead you to the **Summary** section.
 </code></pre>
@@ -205,7 +205,7 @@ You’d probably include Metadata when writing fresh html pages or Markdown docu
 
 <h2 id="syntax">Markdown Syntax</h2>
 
-<h3>Emphasis</h3>
+<h3>Emphasis:</h3>
 
 <pre><code class="language-markdown">This is *italic* and so is _this_  
 This is **bold** and so is __this__
@@ -218,9 +218,9 @@ This is <strong>bold</strong> and so is <strong>this</strong></p>
 
 <hr />
 
-<h3>Links</h3>
+<h3>Links:</h3>
 
-<p><strong>Inline:</strong></p>
+<p class="nearer"><strong>Inline:</strong></p>
 
 <pre><code class="language-markdown">See [Your Website](https://yourwebsite.org/ &quot;Title&quot;) for more information.
 </code></pre>
@@ -251,7 +251,7 @@ My email address is &lt;you@yourlink.org&gt;
 
 <p class="nearer"><strong>Result</strong></p>
 
-<p>You should <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x79;&#x6f;&#117;&#x40;&#x79;&#x6f;&#x75;&#114;&#108;&#105;&#110;&#107;&#46;&#111;&#114;&#x67;">&#101;&#109;&#x61;&#x69;&#x6c; &#x6d;&#101;</a></p>
+<p class="nearer">You should <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x79;&#x6f;&#117;&#x40;&#x79;&#x6f;&#x75;&#114;&#108;&#105;&#110;&#107;&#46;&#111;&#114;&#x67;">&#101;&#109;&#x61;&#x69;&#x6c; &#x6d;&#101;</a></p>
 
 <p>My email address is <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#x79;&#x6f;&#x75;&#64;&#x79;&#111;&#x75;&#x72;&#108;&#x69;&#x6e;&#x6b;&#x2e;&#x6f;&#x72;&#103;">&#x79;&#x6f;&#117;&#x40;&#x79;&#111;&#x75;&#114;&#x6c;&#105;&#110;&#x6b;&#x2e;&#111;&#114;&#x67;</a></p>
 
@@ -378,17 +378,18 @@ are used for blockquotes.</p>
 
 <p><code>This is a code span</code></p>
 
-<h3>Pre-formatted Code Blocks</h3>
+<h3>Pre-formatted Code Blocks:</h3>
 
 <p>Indent every line of a code block by at least 4 spaces or 1 tab.</p>
 
-<pre><code class="language-markdown">This is a preformatted
+<p class="nearer"><strong>Result</strong></p>
+<pre><code>This is a preformatted
 code block.
 </code></pre>
 
 <hr />
 
-<h3>Super and Subscript</h3>
+<h3>Super and Subscript:</h3>
 
 <pre><code class="language-markdown">This is Super^super or the 1^st person wins.
 
@@ -397,13 +398,13 @@ This is Sub~sub or the 2~nd person loses.
 
 <p class="nearer"><strong>Result</strong></p>
 
-<p>This is Super<sup>super</sup> or the 1<sup>st</sup> person wins.</p>
+<p class="nearer">This is Super<sup>super</sup> or the 1<sup>st</sup> person wins.</p>
 
 <p>This is Sub<sub>sub</sub> or the 2<sub>nd</sub> person loses.</p>
 
 <hr />
 
-<h3>Horizontal Rules</h3>
+<h3>Horizontal Rules:</h3>
 
 <p>Three or more dashes, underscores or asterisks:</p>
 
@@ -416,16 +417,17 @@ ____
 
 <hr />
 
-<h3>Manual Line Breaks</h3>
+<h3>Manual Line Breaks:</h3>
 
 <p>End a line with two or more spaces:</p>
 
+<p class="nearer"><strong>Result</strong></p>
 <p>Roses are red,<br/>
 Violets are blue.</p>
 
 <hr />
 
-<h3>Backlash Escapes</h3>
+<h3>Backlash Escapes:</h3>
 
 <p>Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown’s formatting syntax. For example, if you wanted to surround a word with literal asterisks (<em>instead of an HTML <code>&lt;em&gt;</code> tag</em>), you can use backslashes before the asterisks, like this:</p>
 
@@ -494,7 +496,7 @@ elsewhere in the document:
 <figcaption>Elephant Santuary</figcaption>
 </figure>
 
-<h3>Styled Images</h3>
+<h3>Styled Images:</h3>
 
 <p>The original image is 200px x 220px as seen in the Inline and Reference images above. We can change the size to 150px x 155px and display it with a image class <code>img-framed</code></p>
 
@@ -594,7 +596,7 @@ border-radius: 50rem !important;
 </tbody>
 </table>
 
-<h3>Structure</h3>
+<h3>Structure:</h3>
 
 <p>If you are familiar with HTML tables, you&#8217;ll instantly recognize the structure of the table syntax. All tables must begin with one or more <strong>rows</strong> of <strong>headers</strong>, and each <strong>row</strong> may have one or more <strong>columns</strong>.</p>
 
@@ -607,7 +609,7 @@ border-radius: 50rem !important;
 <li>Columns are separated by <code>|</code>.</li>
 </ul>
 
-<h3>Alignment</h3>
+<h3>Alignment:</h3>
 
 <p>To align the data cells on the table, you need to introduce a special row right after the headers, that will determine how the following rows &#8211; the data rows &#8211; will be aligned.</p>
 
@@ -717,7 +719,7 @@ border-radius: 50rem !important;
 
 <p>Rather than parenthesizing a side note or place it between em-dashes &#8211; as unimportant as it is, the reader will go through it, just like you did now &#8211; you can defer its reading and expand on your thoughts there.</p>
 
-<p>Example</p>
+<p class="nearer">Example</p>
 
 <pre><code class="language-markdown">Clicking this number[^fn-sample_footnote] will lead you to a footnote.
 
@@ -741,12 +743,6 @@ Place this in the document footer:
 <p>Then add the following description of the reference to be used in the bibliography. (<em>seen in the Article Footnotes</em>)</p>
 
 <pre><code class="language-markdown">[#Doe:2006]: John Doe. *Some Big Fancy Book*.  Vanity Press, 2006.
-</code></pre>
-
-<p>Your markdown will look like this:</p>
-
-<pre><code class="language-markdown">This is a statement that should be attributed to its source[p. 23][#Doe:2006].
-[#Doe:2006]: John Doe. *Some Big Fancy Book*.  Vanity Press, 2006.
 </code></pre>
 
 <hr />
@@ -805,31 +801,68 @@ Orange
 </div>
   </main>
   <footer class="footer">
-    <nav class="footer-links"><a href="/blog/">Blog</a> . #<a href="/blog/css/">Css</a></nav>
-    <p class="third">&copy;2025 <a href="/" title="howardlucas">howardlucas . </a><a class="modal-button" href="javascript:;">Contact . </a><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a></p>
+    <nav class="footer-cat-links"></nav>
+    <div class="footer-wrap">
+      <nav class="footer-links">
+        <a href="/blog/">Blog</a> . <a href="/javascript/">Javascript</a>
+      </nav>
+      <p class="third">
+        &copy;2025 <a href="/" title="bylucas">bylucas . </a
+        ><a class="modal-button" href="javascript:;">Contact . </a
+        ><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a>
+      </p>
+    </div>
   </footer>
+  
   <div class="popup-wrapper">
       <div class="popup">
         <div class="popup-close">X</div>
-        
+    
         <div class="popup-content">
           <h3>Contact Form</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sint quam ipsa molestias ad pariatur aspernatur mollitia repudiandae! Dignissimos unde doloremque voluptates magni nulla vitae a neque dolores laborum libero?</p>
-         <form class="contact-form">
-            <input class="subscribe" type="text" id="name" placeholder="your name" required />
-            <input class="subscribe" type="email" id="email" placeholder="youremail@example.com" required />
-            <textarea class="subscribe" id="message" placeholder="How can we help?" required></textarea>
+          <p>
+            For further information or enquiries please use the form below.<br />We
+            aim to answer enquiries within 24hrs. <br />If you prefer to contact us
+            by email -
+            <a
+              href="mailto:h@bylucas.org?Subject=Enquiry%20from%20the%20bylucas-website"
+              >h@bylucas.org</a
+            >
+          </p>
+          <form class="contact-form">
+            <input
+              class="subscribe"
+              type="text"
+              id="name"
+              placeholder="your name"
+              required
+            />
+            <input
+              class="subscribe"
+              type="email"
+              id="email"
+              placeholder="youremail@example.com"
+              required
+            />
+            <textarea
+              class="subscribe"
+              id="message"
+              placeholder="How can we help?"
+              required
+            ></textarea>
             <div class="feedback">You Did It!.... We'll be in-touch shortly</div>
             <button type="submit" class="contact-submit">Send</button>
           </form>
         </div>
       </div>
     </div>
+    
 </div>
 </body>
 <script>
   const linkTitle = 'Markdown and Multi-Markdown Guide'
   const linkCat = 'cheatCat'
+  const allCatsLink = 'Cheat-Sheets'
 </script>
 
 <script src="../../js/navigation.js"></script>
@@ -839,4 +872,6 @@ Orange
 <script src="../js-blog/all-links.js"></script>
 <script src="../js-blog/sidebar-links.js"></script>
 <script src="../js-blog/related-link.js"></script>
+<script src="../js-blog/all-category-links.js"></script>
+
 </html>

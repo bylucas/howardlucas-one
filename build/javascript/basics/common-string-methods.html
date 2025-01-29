@@ -46,8 +46,8 @@
   <header>
  <div class="inner">
   <div class="logo-box">
-    <a href="/"><img src="../../apple-touch-icon.png" alt=""></a>
-    <p> - <a href="/javascript/">Javascript</a></p>
+    <a href="/"><img src="../../images/bylucas-lgo-text.webp" alt="bylucas logo"></a>
+    <p>- <a href="/javascript/">Javascript</a></p>
   </div>
    
    <nav id="site-navigation" class="main-navigation">
@@ -60,7 +60,7 @@
    
    <section class="menu-wrap">
      <div class="nav-picture">
-       <a href="/"><img src="../../apple-touch-icon.png" alt=""></a>
+       <a href="/"><img src="../../images/bylucas-lgo-text.webp" alt="bylucas logo"></a>
      </div>
      <ul role='list' class="top-links">
      <li><a href="/blog/">Blog</a></li>
@@ -191,31 +191,68 @@ console.log(result12)
 </div>
   </main>
   <footer class="footer">
-    <nav class="footer-links"><a href="/javascript/">Javascript</a> . #<a href="/javascript/control-flow/">Control Flow</a></nav>
-    <p class="third">&copy;2025 <a href="/" title="howardlucas">howardlucas . </a><a class="modal-button" href="javascript:;">Contact . </a><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a></p>
+    <nav class="footer-cat-links"></nav>
+    <div class="footer-wrap">
+      <nav class="footer-links">
+        <a href="/javascript/">Javascript</a> . <a href="/blog/">Blog</a>
+      </nav>
+      <p class="third">
+        &copy;2025 <a href="/" title="bylucas">bylucas . </a
+        ><a class="modal-button" href="javascript:;">Contact . </a
+        ><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a>
+      </p>
+    </div>
   </footer>
+  
   <div class="popup-wrapper">
       <div class="popup">
         <div class="popup-close">X</div>
-        
+    
         <div class="popup-content">
           <h3>Contact Form</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sint quam ipsa molestias ad pariatur aspernatur mollitia repudiandae! Dignissimos unde doloremque voluptates magni nulla vitae a neque dolores laborum libero?</p>
-         <form class="contact-form">
-            <input class="subscribe" type="text" id="name" placeholder="your name" required />
-            <input class="subscribe" type="email" id="email" placeholder="youremail@example.com" required />
-            <textarea class="subscribe" id="message" placeholder="How can we help?" required></textarea>
+          <p>
+            For further information or enquiries please use the form below.<br />We
+            aim to answer enquiries within 24hrs. <br />If you prefer to contact us
+            by email -
+            <a
+              href="mailto:h@bylucas.org?Subject=Enquiry%20from%20the%20bylucas-website"
+              >h@bylucas.org</a
+            >
+          </p>
+          <form class="contact-form">
+            <input
+              class="subscribe"
+              type="text"
+              id="name"
+              placeholder="your name"
+              required
+            />
+            <input
+              class="subscribe"
+              type="email"
+              id="email"
+              placeholder="youremail@example.com"
+              required
+            />
+            <textarea
+              class="subscribe"
+              id="message"
+              placeholder="How can we help?"
+              required
+            ></textarea>
             <div class="feedback">You Did It!.... We'll be in-touch shortly</div>
             <button type="submit" class="contact-submit">Send</button>
           </form>
         </div>
       </div>
     </div>
+    
 </div>
 </body>
 <script>
   const linkTitle = 'Common String Methods'
   const linkCat = 'basicsCat'
+  const allCatsLink = 'Basics'
 </script>
 
 <script src="../../js/navigation.js"></script>
@@ -226,5 +263,7 @@ console.log(result12)
 <script src="../js-javascript/all-links.js"></script>
 <script src="../js-javascript/sidebar-links.js"></script>
 <script src="../js-javascript/related-link.js"></script>
+<script src="../js-javascript/all-category-links.js"></script>
+
 
 </html>

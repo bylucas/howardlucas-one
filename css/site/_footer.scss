@@ -1,37 +1,64 @@
 @use "../root/" as *;
 
 .footer {
+  margin-top: $spacer * 1.5;
+  border-top: 1px dashed $light-gray;
+  @include padding(20px null);
+}
+
+.footer-wrap {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: $spacer*2;
-  border-top: 1px dashed $light-gray;
-  @include padding($spacer null);
+}
+
+.footer-cat-links {
+  text-align: center;
+  margin-bottom: 6px;
+  a {
+    display: inline;
+    font-size: $third;
+    // margin-left: 2px;
+    // margin-right: 2px;
+
+    &:after {
+      content: " . ";
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+  }
 }
 
 .footer-links {
-margin-bottom: 10px;
-      
-a {
-  display: inline;
-  font-size: $third;
-  margin-left: 2px;
-  margin-right: 2px;
-}
+  margin-bottom: 10px;
+
+  a {
+    display: inline;
+    font-size: $third;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 
 @include media(700) {
   .footer {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-
+    margin-top: $spacer * 2;
+    //@include padding($spacer null);
     p {
       margin-bottom: 0;
     }
-}
+  }
+  .footer-wrap {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
-.footer-links {
+  .footer-links {
     margin-bottom: 0;
-}
+  }
 }

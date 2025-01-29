@@ -193,6 +193,12 @@ h6 {
 }
 
 @include media(700) {
+  //balance the headings
+  h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
   h1 {
     font-size: 2.5rem;
   }

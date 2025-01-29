@@ -1,1 +1,1 @@
-const cssLinks=["Css One","Css Two","Css Three"],cheatLinks=["Git and Github Basics","Markdown and Multi-Markdown Guide","Command Line Basics"];
+const allCatLinks=["Cheat-Sheets","Css","Html","Javascript"],cssLinks=["Css One","Css Two","Css Three"],cheatLinks=["Git and Github Basics","Markdown and Multi-Markdown Guide","Command Line Basics"];

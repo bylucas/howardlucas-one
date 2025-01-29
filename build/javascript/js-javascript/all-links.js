@@ -1,1 +1,1 @@
-const basicLinks=["Variables","Strings","Common String Methods"],controlLinks=["Break and Continue","Do While Loops","Else If Statements"];
+const allCatLinks=["Basics","Control Flow","Functions","Arrays","Objects","Classes","DOM"],basicLinks=["Variables","Strings","Common String Methods"],controlLinks=["Break and Continue","Do While Loops","Else If Statements"];

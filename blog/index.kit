@@ -6,51 +6,60 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- @import ../includes/meta -->
-  
-  <title><!-- $title --></title>
-  <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body class="blog" onload="spinner()">
-  <div class="wrapper">
-<button id="topBtn" title="Back to top">Top</button>
-<div id="loader-wrapper">
-  <div id="loader"></div>
-  <div class="loader-section section-left"></div>
-  <div class="loader-section section-right"></div>
-</div>
+  <head>
+    <!-- @import ../includes/meta -->
 
-  <header>
- <div class="inner">
-   <div class="logo-box">
-    <a href="/"><img src="../../apple-touch-icon.png" alt=""></a>
-    <span>- Blog</span>
-  </div>
-   <!-- @import includes-blog/navigation -->
-  </div>
-</header>
-  <main>
-    <header class="page-header">
-   
-    <h1><!-- $title --></h1>
-   
-  </header>
+    <title><!-- $title --></title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="blog" onload="spinner()">
+    <div class="wrapper">
+      <button id="topBtn" title="Back to top">Top</button>
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
 
-  <div class="index-wrap"></div>
-  </main>
-    <footer class="footer">
-  <nav class="footer-links"><a href="/javascript/">Javascript . </a>#<a href="/blog/cheat-sheets/">Cheat-Sheets . </a>#<a href="/blog/css/">Css</a></nav>
-  <p class="third">&copy;2025 <a href="/" title="howardlucas">howardlucas . </a><a class="modal-button" href="javascript:;">Contact . </a><a href="/privacy.html">Privacy . </a><a href="/usage.html">Usage</a></p>
-</footer>
-<!-- @import '../includes/_modal' -->
-</div>
-</body>
-<script>
-  const linkTitle = 'blog'
-</script>
-<!-- @import '../includes/_default-js' -->
-<script src="js-blog/all-links.js"></script>
-<script src="js-blog/sidebar-links.js"></script>
-<script src="js-blog/blog.js"></script>
+      <header>
+        <div class="inner">
+          <div class="logo-box">
+            <a href="/"
+              ><img src="../../images/bylucas-lgo-text.webp" alt="bylucas logo"
+            /></a>
+            <span>- Blog</span>
+          </div>
+          <!-- @import includes-blog/navigation -->
+        </div>
+      </header>
+      <main>
+        <header class="page-header">
+          <h1><!-- $title --></h1>
+        </header>
+
+        <div class="index-wrap"></div>
+      </main>
+      <footer class="footer">
+        <div class="footer-wrap">
+          <nav class="footer-links">
+            <a href="/javascript/">Javascript</a>
+          </nav>
+          <p class="third">
+            &copy;2025 <a href="/" title="bylucas">bylucas . </a
+            ><a class="modal-button" href="javascript:;">Contact . </a
+            ><a href="/privacy.html">Privacy . </a
+            ><a href="/usage.html">Usage</a>
+          </p>
+        </div>
+      </footer>
+      <!-- @import '../includes/_modal' -->
+    </div>
+  </body>
+  <script>
+    const linkTitle = 'blog'
+  </script>
+  <!-- @import '../includes/_default-js' -->
+  <script src="js-blog/all-links.js"></script>
+  <script src="js-blog/sidebar-links.js"></script>
+  <script src="js-blog/blog.js"></script>
 </html>

@@ -1,0 +1,1 @@
+const insertAllCatLinks=document.querySelector(".footer-cat-links"),allCategoryLinks=()=>{allCatLinks.forEach((l=>{if(l!==allCatsLink){let t=`#<a href="/blog/${l.toLowerCase().split(" ").join("-")}/">${l}</a>`;insertAllCatLinks.innerHTML+=t}}))};allCategoryLinks();
